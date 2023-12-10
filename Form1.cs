@@ -84,7 +84,7 @@ namespace Inventory_system
             InitializeComponent();
             //Initialize the SQL server
             GlobalConnection.DataSource = "LocalDB";
-            GlobalConnection.DatabaseName = "LoaclDBTest";
+            GlobalConnection.DatabaseName = "LocalDBTest";
             GlobalConnection.DatabaseCatalog = "Inventory_DB";
             GlobalConnection.DatabaseTable = "TABLE_INVENTORY1";
  
