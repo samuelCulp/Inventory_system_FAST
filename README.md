@@ -12,9 +12,6 @@ Prerequisites
 Getting Started
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/your-username/inventory-system.git
 Open the solution in Visual Studio.
 
 Build and run the application.
