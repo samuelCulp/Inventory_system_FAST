@@ -17,10 +17,10 @@ namespace Inventory_system
         {
             InitializeComponent();
 
-            textBox1.Text = Form1.GlobalConnection.DataSource;
-            textBox2.Text = Form1.GlobalConnection.DatabaseName;
-            textBox3.Text = Form1.GlobalConnection.DatabaseCatalog;
-            textBox4.Text = Form1.GlobalConnection.DatabaseTable;
+            textBox1.Text = mainForm.GlobalConnection.DataSource;
+            textBox2.Text = mainForm.GlobalConnection.DatabaseName;
+            textBox3.Text = mainForm.GlobalConnection.DatabaseCatalog;
+            textBox4.Text = mainForm.GlobalConnection.DatabaseTable;
 
         }
 
@@ -44,10 +44,10 @@ namespace Inventory_system
 
                     MessageBox.Show("Connection successful. SQL Server exists.");
 
-                    Form1.GlobalConnection.DataSource = textBox1.Text;
-                    Form1.GlobalConnection.DatabaseName = textBox2.Text;
-                    Form1.GlobalConnection.DatabaseCatalog = textBox3.Text;
-                    Form1.GlobalConnection.DatabaseTable = textBox4.Text;
+                    mainForm.GlobalConnection.DataSource = textBox1.Text;
+                    mainForm.GlobalConnection.DatabaseName = textBox2.Text;
+                    mainForm.GlobalConnection.DatabaseCatalog = textBox3.Text;
+                    mainForm.GlobalConnection.DatabaseTable = textBox4.Text;
                     Close();
                 }
             }

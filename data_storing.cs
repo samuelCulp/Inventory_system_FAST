@@ -9,7 +9,7 @@ using System;
 using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
-using static Inventory_system.Form1;
+using static Inventory_system.mainForm;
 
 
 /* This file writing to the database also create new tables 
@@ -19,8 +19,8 @@ namespace Inventory_system
 {
     public class data_storing
     {
-        public string ConnectionString { get { return Form1.GlobalConnection.ConnectionString; } }
-        public string TableName { get { return Form1.GlobalConnection.TableName; } }
+        public string ConnectionString { get { return mainForm.GlobalConnection.ConnectionString; } }
+        public string TableName { get { return mainForm.GlobalConnection.TableName; } }
         public SqlDataAdapter adpt { get; private set; }
 
         public static SqlDataAdapter updateQ()
@@ -74,7 +74,7 @@ namespace Inventory_system
         {
             try
             {
-                string connectionString = Form1.GlobalConnection.ConnectionString;
+                string connectionString = mainForm.GlobalConnection.ConnectionString;
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
@@ -107,14 +107,14 @@ namespace Inventory_system
            
             if (!DoesItemExist(item_name))
             {
-                string connectionString = Form1.GlobalConnection.ConnectionString;
+                string connectionString = mainForm.GlobalConnection.ConnectionString;
 
                 string itemName = item_name;
                 int quantity = item_qty;
                 double price = item_price;
 
                 // SQL command to insert data into the table
-                string insertQuery = $"INSERT INTO {Form1.GlobalConnection.DatabaseTable} (ITEM, QUANTITY, PRICE) VALUES (@Item, @Quantity, @Price)";
+                string insertQuery = $"INSERT INTO {mainForm.GlobalConnection.DatabaseTable} (ITEM, QUANTITY, PRICE) VALUES (@Item, @Quantity, @Price)";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
@@ -186,11 +186,6 @@ namespace Inventory_system
                 sqlConnection.Close();
             }
         }
-
-
-
-
-
     }
 }
 

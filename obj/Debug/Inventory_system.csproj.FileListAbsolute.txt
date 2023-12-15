@@ -3,13 +3,13 @@ E:\Inventory system C#\Inventory_system\bin\Debug\Inventory_system.exe
 E:\Inventory system C#\Inventory_system\bin\Debug\Inventory_system.pdb
 E:\Inventory system C#\Inventory_system\obj\Debug\Inventory_system.csproj.AssemblyReference.cache
 E:\Inventory system C#\Inventory_system\obj\Debug\Inventory_system.csproj.SuggestedBindingRedirects.cache
-E:\Inventory system C#\Inventory_system\obj\Debug\Inventory_system.Form1.resources
 E:\Inventory system C#\Inventory_system\obj\Debug\Inventory_system.Properties.Resources.resources
 E:\Inventory system C#\Inventory_system\obj\Debug\Inventory_system.csproj.GenerateResource.cache
 E:\Inventory system C#\Inventory_system\obj\Debug\Inventory_system.csproj.CoreCompileInputs.cache
 E:\Inventory system C#\Inventory_system\obj\Debug\Inventory_system.exe
 E:\Inventory system C#\Inventory_system\obj\Debug\Inventory_system.pdb
-E:\Inventory system C#\Inventory_system\obj\Debug\Inventory_system.Form2.resources
 E:\Inventory system C#\Inventory_system\obj\Debug\Inventory_system.EditForm.resources
 E:\Inventory system C#\Inventory_system\obj\Debug\Inventory_system.DataSource.resources
-E:\Inventory system C#\Inventory_system\obj\Debug\Inventory_system.Form3.resources
+E:\Inventory system C#\Inventory_system\obj\Debug\Inventory_system.mainForm.resources
+E:\Inventory system C#\Inventory_system\obj\Debug\Inventory_system.itemAdd.resources
+E:\Inventory system C#\Inventory_system\obj\Debug\Inventory_system.createTable.resources

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Inventory_system
 {
-    public partial class Form2 : Form
+    public partial class itemAdd : Form
     {
 
         public string Item_name {  get; private set; }
@@ -20,7 +20,7 @@ namespace Inventory_system
         public double Item_price { get; private set; }
 
 
-        public Form2()
+        public itemAdd()
         {
             InitializeComponent();
            

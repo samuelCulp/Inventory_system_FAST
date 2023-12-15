@@ -13,12 +13,12 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Inventory_system
 {
-    public partial class Form3 : Form
+    public partial class createTable : Form
     {
-        public Form3()
+        public createTable()
         {
             InitializeComponent();
-            textBox1.Text = Form1.GlobalConnection.DatabaseTable;
+            textBox1.Text = mainForm.GlobalConnection.DatabaseTable;
 
         }
 
@@ -40,7 +40,7 @@ namespace Inventory_system
         private void button1_Click(object sender, EventArgs e)
         {
             data_storing.CreateDB(textBox1.Text);
-            Form1.GlobalConnection.DatabaseTable = textBox1.Text;
+            mainForm.GlobalConnection.DatabaseTable = textBox1.Text;
 
             Close();
         }

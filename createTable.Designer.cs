@@ -1,6 +1,6 @@
 ﻿namespace Inventory_system
 {
-    partial class Form3
+    partial class createTable
     {
         /// <summary>
         /// Required designer variable.

@@ -10,10 +10,14 @@ using System.Windows.Forms;
 using System.Data;
 using System.Data.SqlClient;
 
+/*This program reads and writes to an SQL server.
+ * You can create tables and add and change the data in the table. 
+ * To run this program you need to make a SQL server and a database.
+ * You can use a local DB I have not tested a server of my device. */
 
 namespace Inventory_system
 {
-    public partial class Form1 : Form
+    public partial class mainForm : Form
     {
 
         private SqlConnection sqlConnection;
@@ -79,7 +83,7 @@ namespace Inventory_system
 }
 
 
-        public Form1()
+        public mainForm()
         {
             InitializeComponent();
             //Initialize the SQL server
@@ -160,7 +164,7 @@ namespace Inventory_system
 
         private void btnAddItem_Click(object sender, EventArgs e)
         {
-            Form2 secondForm = new Form2();
+            itemAdd secondForm = new itemAdd();
             if (secondForm.ShowDialog() == DialogResult.OK)
             {
                 
@@ -200,7 +204,7 @@ namespace Inventory_system
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
+            createTable form3 = new createTable();
             if (form3.ShowDialog() == DialogResult.OK) { updateDB(); }
         }
     }

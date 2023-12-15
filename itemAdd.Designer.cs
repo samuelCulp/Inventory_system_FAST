@@ -1,6 +1,6 @@
 ﻿namespace Inventory_system
 {
-    partial class Form2
+    partial class itemAdd
     {
         /// <summary>
         /// Required designer variable.
