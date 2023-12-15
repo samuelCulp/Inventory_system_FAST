@@ -13,7 +13,9 @@ using System.Data.SqlClient;
 /*This program reads and writes to an SQL server.
  * You can create tables and add and change the data in the table. 
  * To run this program you need to make a SQL server and a database.
- * You can use a local DB I have not tested a server of my device. */
+ * You can use a local DB I have not tested a server of my device.
+ GitHub link:  https://github.com/samuelCulp/Inventory_system_FAST
+*/
 
 namespace Inventory_system
 {
